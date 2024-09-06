@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.navbar{
+    background-color: #272528;
+    
+    
+}
+.nav-link{
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    color:gold;
+}
+
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    background-color: #087075;
+  }
+  
+  .nav-hover::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  .nav-hover:hover::before {
+    width: 70%;
+  }
+  
+  
+body{
+    background-image: url("https://images.unsplash.com/photo-1517490406687-7339e4a7d792?q=80&w=1846&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-color: rgba(148, 88, 88, 0.9); /* Adding transparent background color */;
+
+}
+body::-webkit-scrollbar-track {
+	
+	
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+    
+	width: 7px;
+	/* background-color: #F5F5F5; */
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color:#66dce2;
+    
+}
+
+body{
+    font-family: "Fira Sans", sans-serif;
+}
+
+#home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home a{
+    color: rgb(37, 35, 35);
+}
+#home p{
+    font-size: 25px;
+}
+#home i{
+    cursor: pointer;
+    transition: 0.5s;
+}
+#home i:hover{
+    color: rgb(146, 146, 0);
+}
+#scrollBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+#skills i{
+   
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#skills i:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+#projects .col-lg-4{
+    padding: 20px;
+}
+#projects .card{
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px auto;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+#projects .card-body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: none;
+
+}
+#projects .card:hover .card-body{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#education .education{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(46, 223, 193, 0.5);
+    
+}
+#education .education:hover{
+    transform: scale(1.02);
+}
+.card-img-top.img-fluid {
+    width: 400px; /* adjust the width */
+    height: 200px; /* adjust the height */
+    object-fit: cover;
+
+  }
+
+
+@media (max-width:768px) { 
+    #home img{
+        margin-bottom: 30px;
+        width: 200px;
+    }
+    #home .col-md-8{
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+    }
+    #home p{
+        width: 100%;
+        font-size: 18px;
+       
+    }
+   
+
+   
+}
+@media (max-width:370px) {
+    #home h1{
+        font-size: 25px;
+    }
+   
+}
+
+
+
+
+
